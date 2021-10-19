@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Interactive login form</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="login.js"></script>
+</head>
+<body>
+    <p>- Actually the right username is Khushi and passsword Codelover@12 -</p>
+   <form action="index.html" class="box" method="POST">
+    <h1>
+        login
+    </h1>
+    <input type="text" name="" placeholder="Enter User name" id="username">
+    <input type="password" name="" placeholder="Enter Password" id="password" minlength="8" maxlength="15" pattern="[a-zA-Z0-9]+" required>
+    <input type="submit" name="" value="login" onclick="validate()" >
+    <button id="rule" type="button" onclick="Show('rules')">Rules</button>
+   </form> 
+   <div id="rules" class="myrules">
+       <ul>
+           <li>Username must have between 3 and 15 characters</li>
+           <li>Password must have between 8 and 15 characters</li>
+           <li>Username and Password required</li>
+           <li>Use only numbers and letters</li>
+       </ul>
+
+   </div>
+</body>
+</html>
